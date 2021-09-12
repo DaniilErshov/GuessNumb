@@ -15,19 +15,21 @@ int _tmain(int argc, _TCHAR* argv[])
     std::cin >> k;
     if (k==1)
     {
-      n += 50/(pow(2,i));
       if (50/(pow(2,i)) < 1)
       {
         n++;
-      }
+      } else {
+		  n += 50/(pow(2,i));
+	  }
     }
     if (k==2)
     {
-      n-= 50/((pow(2,i)));
       if (50/(pow(2,i)) < 1)
       {
         n--;
-      }
+      } else {
+		  n-= 50/((pow(2,i)));
+	  }
     }
     if (k==3)
     {
@@ -38,5 +40,3 @@ int _tmain(int argc, _TCHAR* argv[])
   }
 return 0;
 }
-#GuessNumb
-"# GuessNumb" 
